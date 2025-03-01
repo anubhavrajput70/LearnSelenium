@@ -1,4 +1,4 @@
-package selenium;
+package getMethods;
 
 import java.util.Set;
 

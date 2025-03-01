@@ -1,4 +1,4 @@
-package selenium;
+package navigationalCommands;
 
 import java.net.MalformedURLException;
 import java.net.URL;
