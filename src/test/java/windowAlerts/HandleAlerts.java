@@ -1,4 +1,4 @@
-package selenium;
+package windowAlerts;
 
 import java.time.Duration;
 
