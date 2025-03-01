@@ -1,4 +1,4 @@
-package selenium;
+package windowsHandling;
 
 import java.time.Duration;
 import java.util.ArrayList;

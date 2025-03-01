@@ -1,4 +1,4 @@
-package selenium;
+package tables;
 
 import java.time.Duration;
 import java.util.Arrays;

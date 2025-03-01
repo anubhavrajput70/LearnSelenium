@@ -1,4 +1,4 @@
-package selenium;
+package waits;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
