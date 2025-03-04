@@ -18,17 +18,21 @@ public class PaginationTablePractice {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
 		
+		//counting the number of pages
 		List<WebElement> list=driver.findElements(By.xpath("//ul[@id='pagination']//li"));
 		System.out.println("number of pages is: "+list.size());
 		
+		//counting the number of rows
 		List<WebElement> row=driver.findElements(By.xpath("//table[@id='productTable']//tbody//tr"));
 		System.out.println("number of rows is: "+row.size());
 		
+		//loop for clicking on the pages 
 		for(int j=1;j<=list.size();j++)
 		{
 		if(j>1)
 		driver.findElement(By.xpath("//ul[@id='pagination']//li//a[contains(text(),'"+j+"')]")).click();
 		Thread.sleep(3000);
+		//loop for iterating through the table rows
 		for(int i=1;i<=row.size();i++)
 		{
 			String sn=driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+i+"]//td[1]")).getText();
@@ -37,11 +41,8 @@ public class PaginationTablePractice {
 			WebElement checkbox=driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+i+"]//td[4]//input"));
 			checkbox.click();
 			System.out.println(sn+"\t"+name+"\t"+price);
-			
 		}
 		}
-	
-
 	}
 
 }
