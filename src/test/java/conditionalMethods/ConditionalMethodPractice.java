@@ -12,7 +12,7 @@ public class ConditionalMethodPractice {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-		
+
 		WebElement siteTitle=driver.findElement(By.xpath("//h1[@class='title']"));
 		if(siteTitle.isDisplayed())
 		{
