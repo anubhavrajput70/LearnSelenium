@@ -1,3 +1,4 @@
+package brokenLinks;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -12,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BrokenLinks {
 
 	//broken link is a link which does not have any resource in the server
-	/*1. link should have href attribute and corresponding value
+  /*1. link should have href attribute and corresponding value
 	2. hit the url on the server then check the status code
 	3. if status code >=400 broken link
 		if status code < 400 not a broken link */
