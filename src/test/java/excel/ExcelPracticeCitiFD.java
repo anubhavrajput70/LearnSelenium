@@ -62,19 +62,17 @@ public class ExcelPracticeCitiFD {
 			js1.executeScript("arguments[0].click()", submitBtn);
 
 			WebElement compValue = driver.findElement(By.xpath("//span[@id='displayTotalValue']"));
-			System.out.println("comp value: "+compValue.getText());
-			System.out.println("total: "+total);
 			if(compValue.getText().equals(total))
 			{
 				System.out.println("test passed");
-				ExcelUtils.setCellData(xlPath, "Sheet1", i, 5, "Passed");
-				ExcelUtils.fillGreenColor(xlPath, "Sheet1", i, 5);
+				ExcelUtils.setCellData(xlPath, "Sheet1", i, 6, "Passed");
+				ExcelUtils.fillGreenColor(xlPath, "Sheet1", i, 6);
 			}
 			else
 			{
 				System.out.println("test failed");
-				ExcelUtils.setCellData(xlPath, "Sheet1", i, 5, "Failed");
-				ExcelUtils.fillRedColor(xlPath, "Sheet1", i, 5);
+				ExcelUtils.setCellData(xlPath, "Sheet1", i, 6, "Failed");
+				ExcelUtils.fillRedColor(xlPath, "Sheet1", i, 6);
 			}
 		}
 		driver.quit();
