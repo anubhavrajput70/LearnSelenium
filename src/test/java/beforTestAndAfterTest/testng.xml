@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="beforTestAndAfterTest.C1"/>
+      <class name="beforTestAndAfterTest.C2"/>
+      <class name="beforTestAndAfterTest.C3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test1">
+    <classes>
+        <class name="beforTestAndAfterTest.C1"/>
+      <class name="beforTestAndAfterTest.C2"/>
+      <class name="beforTestAndAfterTest.C3"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
