@@ -1,9 +1,10 @@
-package excelUtility;
+package excel;
 
 import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,8 +46,13 @@ public class FDCalculator {
 			WebElement drpdwn1 = driver.findElement(By.xpath("//select[@id='frequency']"));
 			Select sel1 = new Select(drpdwn1);
 			sel1.selectByVisibleText(freq);
+			
 			//clicking on calculate button
-			driver.findElement(By.xpath("//div[@class='CTR PT15']//a[1]")).click();
+			WebElement calBtn = driver.findElement(By.xpath("//div[@class='CTR PT15']//a[1]"));
+			JavascriptExecutor js= (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click()", calBtn);
+			
+			
 			
 			//validation
 			String act_value = driver.findElement(By.xpath("//div[@class='PR20 PT5']//span[2]//strong")).getText();
