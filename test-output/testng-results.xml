@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-12T02:44:56 IST" name="Suite" finished-at="2025-03-12T02:44:56 IST" duration-ms="52">
+  <suite started-at="2025-03-13T01:47:14 IST" name="Default suite" finished-at="2025-03-13T01:47:27 IST" duration-ms="12738">
     <groups>
-      <group name="sanity">
-        <method signature="LoginTest.loginByEmail()[pri:1, instance:grouping.LoginTest@2f7298b]" name="loginByEmail" class="grouping.LoginTest"/>
-        <method signature="LoginTest.loginByFacebook()[pri:2, instance:grouping.LoginTest@2f7298b]" name="loginByFacebook" class="grouping.LoginTest"/>
-        <method signature="LoginTest.loginByTwitter()[pri:3, instance:grouping.LoginTest@2f7298b]" name="loginByTwitter" class="grouping.LoginTest"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-03-12T02:44:56 IST" name="Test" finished-at="2025-03-12T02:44:56 IST" duration-ms="52">
-      <class name="grouping.LoginTest">
-        <test-method signature="loginByEmail()[pri:1, instance:grouping.LoginTest@2f7298b]" started-at="2025-03-12T02:44:56 IST" name="loginByEmail" finished-at="2025-03-12T02:44:56 IST" duration-ms="12" status="PASS">
+    <test started-at="2025-03-13T01:47:14 IST" name="Default test" finished-at="2025-03-13T01:47:27 IST" duration-ms="12738">
+      <class name="testNGListener.OrangeHRMTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNGListener.OrangeHRMTest@4466af20]" started-at="2025-03-13T01:47:14 IST" name="setup" finished-at="2025-03-13T01:47:26 IST" duration-ms="12041" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByEmail -->
-        <test-method signature="loginByFacebook()[pri:2, instance:grouping.LoginTest@2f7298b]" started-at="2025-03-12T02:44:56 IST" name="loginByFacebook" finished-at="2025-03-12T02:44:56 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:testNGListener.OrangeHRMTest@4466af20]" started-at="2025-03-13T01:47:26 IST" name="testLogo" finished-at="2025-03-13T01:47:26 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByFacebook -->
-        <test-method signature="loginByTwitter()[pri:3, instance:grouping.LoginTest@2f7298b]" started-at="2025-03-12T02:44:56 IST" name="loginByTwitter" finished-at="2025-03-12T02:44:56 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testLogo -->
+        <test-method signature="testappUrl()[pri:2, instance:testNGListener.OrangeHRMTest@4466af20]" started-at="2025-03-13T01:47:26 IST" name="testappUrl" finished-at="2025-03-13T01:47:26 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByTwitter -->
-      </class> <!-- grouping.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testappUrl -->
+        <test-method signature="testHomePageTitle()[pri:3, instance:testNGListener.OrangeHRMTest@4466af20]" started-at="2025-03-13T01:47:26 IST" name="testHomePageTitle" finished-at="2025-03-13T01:47:26 IST" depends-on-methods="testNGListener.OrangeHRMTest.testappUrl" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGListener.OrangeHRMTest@4466af20]" started-at="2025-03-13T01:47:26 IST" name="tearDown" finished-at="2025-03-13T01:47:27 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNGListener.OrangeHRMTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
