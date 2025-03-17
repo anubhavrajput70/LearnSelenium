@@ -37,7 +37,7 @@ public class MyListener implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		System.out.println("test execution               finished");
+		System.out.println("test execution finished");
 	}
 
 
