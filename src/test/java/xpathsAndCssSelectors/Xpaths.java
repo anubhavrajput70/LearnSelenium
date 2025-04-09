@@ -17,7 +17,7 @@ public class Xpaths {
 		//x path with multiple attribute
 		//driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("Mobile");
 		
-		//x path with and or operator
+		//x path with 'and' and 'or' operator
 		//driver.findElement(By.xpath("//input[@name='search' and @placeholder='Search']")).sendKeys("Mobile");
 		//driver.findElement(By.xpath("//input[@name='search' or @placeholder='Search']")).sendKeys("Mobile");
 		

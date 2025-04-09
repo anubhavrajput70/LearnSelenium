@@ -10,7 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWait {
-
+// NoSuchElementException -- occurs due to element is not found on the page because of sysnchronization issue 
+//ElementNotFoundException -- occurs due to element locator is incorrect
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
@@ -30,7 +31,7 @@ public class ExplicitWait {
 		
 		WebElement loginBtn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
 		loginBtn.click();
-		
+
 		driver.close();
 	}
 
