@@ -20,7 +20,7 @@ public class HandleAlertUsingJSExecutor {
 		try {
 			js.executeScript("window.alert.function{}");
 		} catch (Exception e) {
-			
+		
 		}
 
 	}
