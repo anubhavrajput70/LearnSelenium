@@ -22,8 +22,8 @@ public class CheckIfDropDownIsSorted {
 	
 		Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='colors']")));
 		
-		ArrayList original = new ArrayList();
-		ArrayList temp = new ArrayList();
+		ArrayList<String> original = new ArrayList<String>();
+		ArrayList<String> temp = new ArrayList<String>();
 		
 		List<WebElement> options = dropdown.getOptions();
 		
